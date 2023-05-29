@@ -1,0 +1,46 @@
+
+INSERT INTO `department` (`department_id`, `name`, `createdDate`, `note`) 
+VALUES  (NULL, 'Receiving Department', '20/11/2013', NULL),
+        (NULL, 'Raw Material Department', '20/11/2013', NULL),
+        (NULL, 'Crushing Department', '20/11/2013', NULL),
+        (NULL, 'Pelling Department', '20/11/2013', NULL),
+        (NULL, 'Chopping Department', '20/11/2013', NULL),
+        (NULL, 'Cooking-mixing Department', '20/11/2013', NULL),
+        (NULL, 'Blasting Department', '20/11/2013', NULL),
+        (NULL, 'Food Department', '20/11/2013', NULL),
+        (NULL, 'Marketing Department', '20/11/2013', NULL),
+        (NULL, 'Production Department', '20/11/2013', NULL);
+
+INSERT INTO `employee` (`employee_id`, `department_id`, `role`, `name`, `username`, `password`, `level`) 
+VALUES  (NULL, '0', 'employee', 'Carl Travis', 'travis@mail.com', 'travis@mail.com', '1'), 
+        (NULL, '8', 'employee', 'Isis Rocha', 'rocha@mail.com', 'rocha@mail.com', 1),
+        (NULL, '4', 'employee', 'Tiara West', 'west@mail.com', 'west@mail.com', 1),
+        (NULL, '1', 'employee', 'Lillian Estrada', 'estrada@mail.com', 'estrada@mail.com', 1),
+        (NULL, '5', 'employee', 'Angela Park', 'park@mail.com', 'park@mail.com', 1),
+        (NULL, '1', 'employee', 'Darion Yates', 'yates@mail.com', 'yates@mail.com', 1),
+        (NULL, '1', 'employee', 'Braylon Herman', 'herman@mail.com', 'herman@mail.com', 1),
+        (NULL, '2', 'employee', 'Muhammad Silva', 'silva@mail.com', 'silva@mail.com', 1),
+        (NULL, '1', 'employee', 'Brogan Curry', 'curry@mail.com', 'curry@mail.com', 1),
+        (NULL, '4', 'employee', 'Lara Maxwell', 'maxwell@mail.com', 'maxwell@mail.com', 1),
+        (NULL, '1', 'employee', 'Jerimiah Johnson', 'johnson@mail.com', 'johnson@mail.com', 1),
+        (NULL, '6', 'employee', 'Jasmine Conrad', 'conrad@mail.com', 'conrad@mail.com', 1);               
+
+
+INSERT INTO `task` (`task_id`, `name`, `description`, `createdDate`, `deadline`, `assignDate`, `submitDate`, `status`) 
+VALUES  (NULL, 'Inception', 'This is the first phase of the requirements analysis process. This phase gives an outline of how to get started on a project. In the inception phase, all the basic questions are asked on how to go about a task or the steps required to accomplish a task. ', '20/11/2017', '20/05/23', NULL, NULL, 'Available'), 
+        (NULL, 'Elicitation', 'This is the second phase of the requirements analysis process. This phase focuses on gathering the requirements from the stakeholders. ', '20/11/2017', '20/05/23', NULL, NULL, 'Available'),
+        (NULL, 'Elaboration', 'This is the third phase of the requirements analysis process', '20/11/2017', '20/05/23', NULL, NULL, 'Available'),
+        (NULL, 'Negotiation', 'This is the fourth phase of the requirements analysis process. This phase emphasizes discussion and exchanging conversation on what is needed and what is to be eliminated.', '20/11/2017', '20/05/23', NULL, NULL, 'Available'),
+        (NULL, 'Specification', 'This is the fifth phase of the requirements analysis process.', '20/11/2017', '20/05/23', NULL, NULL, 'Available'),
+        (NULL, 'Validation', 'This is the sixth phase of the requirements analysis process. This phase focuses on checking for errors and debugging.', '20/11/2017', '20/05/23', NULL, NULL, 'Available'),
+        (NULL, 'Requirements Management', 'This is the last phase of the requirements analysis process. Requirements management is a set of activities where the entire team takes part in identifying, controlling, tracking, and establishing the requirements for the successful and smooth implementation of the project.', '20/11/2017', '20/05/23', NULL, NULL, 'Available');
+
+// wrong data table 
+INSERT INTO `assignment` (`submit_id`, `sender_id`, `des_when_sending`, `date_sending`, `task_id`, `task_status`, `receiver_id`, `des_when_submit`, `date_submit`, `result`) 
+VALUES  (NULL, '2', 'Bro, help me this task', '04/05/23', '1', 'Sending', '2', NULL, NULL, NULL), 
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '3', 'Sending', '3', 'I tried', '05/05/23', NULL),
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '4', 'Sending', '4', 'I completed', '05/05/23', NULL),
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '5', 'Sending', '5', NULL, '05/05/23', NULL),
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '6', 'Sending', '6', 'I completed', '05/05/23', NULL),
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '7', 'Sending', '7', 'I tried', '05/05/23', NULL),
+        (NULL, 2, 'Bro, help me this task', '04/05/23', '1', 'Sending', '3', 'I completed', '10/05/23', NULL);
